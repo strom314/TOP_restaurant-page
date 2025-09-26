@@ -1,1 +1,3 @@
-console.log("yoo ono to funguje let's gos");
+import { domManager } from "./page-load";
+
+domManager.populateDom();
