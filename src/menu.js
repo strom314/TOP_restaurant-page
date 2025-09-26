@@ -1,3 +1,4 @@
+import pizzaCircle from "./img/pizza_circle.jpg";
 const contentContainer = document.querySelector("#content");
 
 export const domManager = (function () {
@@ -14,8 +15,13 @@ export const domManager = (function () {
 
       card.classList.add("pizza-card");
 
+      cardTitle.textContent = "pizza";
+      const pizzaImg = document.createElement("img");
+      pizzaImg.src = pizzaCircle;
+      card.append(pizzaImg, cardTitle, cardPrice);
+
       cardTitle.textContent = "Awesome pizza";
-      cardPrice.textContent = "9.99";
+      cardPrice.textContent = "$9.99";
 
       cardContainer.append(card);
     }
