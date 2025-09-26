@@ -1,3 +1,5 @@
-import { domManager } from "./page-load";
+import { domManager as homePage } from "./page-load";
+import { domManager as aboutPage } from "./about.js";
 
-domManager.populateDom();
+homePage.populateDom();
+
